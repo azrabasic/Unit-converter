@@ -1,0 +1,16 @@
+print "Hello! Let's convert kilometers in miles."
+
+while True:
+    print "Please insert kilometers"
+    Km = raw_input("Enter km:")
+
+    Km = float (Km.replace(",", "."))
+
+    miles = Km * 0.621371
+    print "{0} kilometers is {1} miles."\
+        .format (Km, miles)
+
+    Again = raw_input ("Would you like to convert something else? (y/n):")
+
+    if Again == "n":
+        break
